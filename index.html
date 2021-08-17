@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello JS</title>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+
+        #seceond-title{
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Hello JavaScript</h1>
+
+    <article>
+        <h3>My awesome blog - 1</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde veniam eaque, sint mollitia obcaecati esse
+            dicta sit iure perspiciatis numquam odit velit, ea vitae ut ratione dolor! Pariatur, id vel!
+        </p>
+        <h3 id="seceond-title">My awesome blog - 2</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde veniam eaque, sint mollitia obcaecati esse
+            dicta sit iure perspiciatis numquam odit velit, ea vitae ut ratione dolor! Pariatur, id vel!
+        </p>
+        <h3>My awesome blog - 3</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde veniam eaque, sint mollitia obcaecati esse
+            dicta sit iure perspiciatis numquam odit velit, ea vitae ut ratione dolor! Pariatur, id vel!
+        </p>
+        <h3 id="third-title">My awesome blog - 4</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde veniam eaque, sint mollitia obcaecati esse
+            dicta sit iure perspiciatis numquam odit velit, ea vitae ut ratione dolor! Pariatur, id vel!
+        </p>
+    </article>
+    <script>
+        //console.log(document);
+        const blogTitles = document.getElementsByTagName('h3');
+        for (const h3 of blogTitles) {
+            console.log(h3.innerText);
+        }
+
+        const blogDetails = document.getElementsByTagName('p');
+        for (const p of blogDetails) {
+            console.log(p.innerText);
+        }
+
+        const seceondTitle = document.getElementById('seceond-title')
+        seceondTitle.style.textAlign = 'center';
+
+        elemrnt = document.querySelector(article)
+
+        const third = document.getElementById('third-title')
+        //thirdTitle.style.textAlign = 'center';
+        third.innerText = "Title updated by JS"
+        third.style.backgroundColor = 'gray'
+        third.style.padding = '20px'
+        third.style.fontsize = '50px'
+        third.style.borderRadius = '20px'
+
+
+        
+    </script>
+
+</body>
+
+</html>
